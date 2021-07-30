@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { ipcRenderer } from "electron";
+
 function App() {
+	console.log(ipcRenderer);
+
 	const [isOpen, setOpen] = useState(false);
 	const [isSent, setSent] = useState(false);
 
